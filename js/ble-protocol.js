@@ -332,7 +332,7 @@ async function pickDevice() {
     // before failing. Keep it simple: user clicks Connect, user picks a device.
     log('🔍 Searching for Marstek devices...');
     return navigator.bluetooth.requestDevice({
-        filters: [{ namePrefix: 'MST' }],
+        filters: [{ namePrefix: 'MST' }, { namePrefix: 'MARS_VNSEM' }],
         optionalServices: [SERVICE_UUID]
     });
 }
