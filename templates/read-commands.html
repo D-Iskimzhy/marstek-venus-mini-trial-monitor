@@ -42,8 +42,8 @@
         <span class="cmd-button-text">🔗 Network Info</span>
         <span class="info-icon" onclick="event.stopPropagation(); showCommandInfo('network')">i</span>
     </button>
-    <button onclick="sendCommand(0x03, 'Local API')" disabled data-tooltip="Check Local API status from runtime information" class="cmd-button" data-requires-connection="true">
-        <span class="cmd-button-text">🌐 Local API</span>
+    <button onclick="sendCommand(0x28, 'Local API Status')" disabled data-tooltip="Read Local API status (0x28) without changing settings" class="cmd-button" data-requires-connection="true">
+        <span class="cmd-button-text">🌐 Local API Status</span>
         <span class="info-icon" onclick="event.stopPropagation(); showCommandInfo('apiread')">i</span>
     </button>
     <button onclick="sendCommand(0x10, 'Read Configuration')" disabled class="cmd-button" data-tooltip="Read device configuration including server credentials (~80 bytes)" data-requires-connection="true">
